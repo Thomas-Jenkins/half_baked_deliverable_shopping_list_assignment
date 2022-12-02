@@ -71,6 +71,7 @@ describe('items', () => {
       user_id: user2.id,
     });
     const resp = await agent.get('/api/v1/items');
+
     expect(resp.status).toEqual(200);
     expect(resp.body).toEqual([user1Item]);
   });
